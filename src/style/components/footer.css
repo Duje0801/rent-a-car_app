@@ -1,0 +1,70 @@
+.footerFo {
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #1f6521;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footerFo {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .footerFo > div:first-child {
+    margin: 0px auto;
+  }
+}
+.columnOneFo {
+  text-align: center;
+  font-weight: bold;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.columnOneInsideFo {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  gap: 30px;
+}
+
+.columnOneInsideFo > div {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0px;
+  font-size: 1.5rem;
+}
+
+.logoFo {
+  height: 100px;
+}
+
+.columnTwoFo {
+  font-size: 1rem;
+}
+
+.mailFo {
+  color: white;
+  text-decoration: none;
+}
+
+.mailFo:hover {
+  text-decoration: underline;
+}
+
+.linkFo {
+  text-decoration: none;
+  color: white;
+}
+
+.linkFo:hover {
+  text-decoration: underline;
+}
+
+.columnThreeFo {
+  font-size: 1rem;
+}/*# sourceMappingURL=footer.css.map */

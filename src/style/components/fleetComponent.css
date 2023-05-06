@@ -1,0 +1,155 @@
+.fleetFC {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+@media only screen and (max-width: 1280px) {
+  .fleetFC {
+    gap: 15px;
+  }
+}
+.titleFC {
+  font-size: 3rem;
+  color: #1f6521;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .titleFC {
+    font-size: 2rem;
+  }
+}
+.carSelectionFC {
+  display: flex;
+  gap: 15px;
+}
+
+.carDisplayFC {
+  color: #1f6521;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1280px) {
+  .carDisplayFC {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .carDisplayFC {
+    display: none;
+  }
+}
+.carImgBoxFC {
+  display: flex;
+  align-items: center;
+  height: 250px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .carImgBoxFC {
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .carImgBoxFC {
+    height: 100px;
+  }
+}
+.carImgFC {
+  width: 325px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .carImgFC {
+    width: 20vw;
+    margin: auto;
+  }
+}
+.respCarSelectionFC {
+  display: none;
+}
+
+@media only screen and (max-width: 620px) {
+  .respCarSelectionFC {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+  }
+  .respCarDisplayFC {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .respCarDisplayFC > div:first-child {
+    color: #1f6521;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .respCarImgBoxFC {
+    display: flex;
+    align-items: center;
+    height: 205px;
+    margin: auto;
+  }
+  .respCarImgFC {
+    width: 60vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .respCarDisplayFC > div:first-child {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .respCarImgBoxFC {
+    height: 170px;
+  }
+}
+.arrowBoxFC {
+  display: none;
+}
+
+.arrowFC {
+  font-size: 3rem;
+}
+
+.arrowFC {
+  font-size: 2rem;
+}
+
+.seeMoreFC {
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.seeMoreFC:hover {
+  color: white;
+  background-color: #1f6521;
+  cursor: pointer;
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 620px) {
+  .seeMoreFC {
+    color: white;
+    font-size: 1.5rem;
+    background-color: #1f6521;
+    border: 2px solid #1f2605;
+    width: 80vw;
+    max-width: 320px;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+  }
+}/*# sourceMappingURL=fleetComponent.css.map */

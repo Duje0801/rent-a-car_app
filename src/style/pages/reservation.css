@@ -1,0 +1,293 @@
+.reservationR {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.titleR {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: #1f2605;
+  color: white;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .titleR {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .titleR {
+    padding: 15px;
+  }
+}
+.titleLogoTextR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .titleLogoTextR {
+    display: none;
+  }
+}
+.backTitleR {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .backTitleR {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0px;
+    font-size: 1.5rem;
+  }
+}
+.logoR {
+  width: 100px;
+}
+
+@media only screen and (max-width: 992px) {
+  .logoR {
+    width: 80px;
+  }
+}
+.gridR {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (min-width: 992px) {
+  .gridR {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.categoryShowR {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  .categoryShowR {
+    font-size: 1.5rem;
+  }
+}
+.categoryShowR > div:first-child {
+  font-weight: bold;
+}
+
+.categoryShowBorderR {
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+}
+
+.categoryShowBoxImg {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 450px) {
+  .categoryShowBoxImg {
+    height: 175px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .categoryShowBoxImg {
+    height: 250px;
+  }
+}
+.categoryShowImg {
+  width: 40vw;
+}
+
+@media only screen and (min-width: 992px) {
+  .categoryShowImg {
+    width: 20vw;
+  }
+}
+.packageBoxR {
+  margin: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  .packageBoxR {
+    font-size: 1.5rem;
+  }
+}
+.packageBoxR > button {
+  background-color: #1f6521;
+  color: white;
+  border: 0px;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.packageBoxR > button:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .packageBoxR > button {
+    font-size: 1.5rem;
+    max-width: 300px;
+  }
+  .packageBoxR > button:hover {
+    color: #1f2605;
+  }
+}
+.packageTitleR {
+  font-weight: bold;
+}
+
+.priceConfirmR {
+  margin: 15px;
+}
+
+.fullPriceTextR {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+  .fullPriceTextR {
+    font-size: 2rem;
+  }
+}
+.fullPriceNumR {
+  background-color: #1f6521;
+  color: white;
+  padding: 5px;
+}
+
+.confirmR {
+  background-color: #1f6521;
+  color: white;
+  border: 0px;
+  padding: 15px;
+  width: 100%;
+  font-size: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirmR:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .confirmR {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .confirmR:hover {
+    color: #1f2605;
+  }
+}
+.diffLocationR {
+  font-size: 0.75rem;
+}
+
+.modalBackgroundR {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalR {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 30px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  text-align: center;
+  border: 2px solid #1f2605;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 5px;
+}
+
+.modalR > img {
+  width: 200px;
+}
+
+.modalR > div:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.modalR > div:last-child {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.descriptionR {
+  font-weight: bold;
+}
+
+.fullPriceR {
+  background-color: #1f6521;
+  color: white;
+  padding: 0px 15px;
+}
+
+.modalButtonYesR {
+  background-color: white;
+  border: 2px solid #53900f;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modalButtonNoR {
+  background-color: white;
+  border: 2px solid red;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+  .modalButtonYesR:hover {
+    background-color: #1f6521;
+    color: white;
+  }
+  .modalButtonNoR:hover {
+    background-color: red;
+    color: white;
+  }
+}
+.finalModalTitleR {
+  font-size: 2rem;
+  margin-top: 30px;
+}/*# sourceMappingURL=reservation.css.map */

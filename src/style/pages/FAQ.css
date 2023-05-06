@@ -1,0 +1,78 @@
+.frontFAQ {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.frontImageFAQ {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -2;
+}
+
+.FAQ {
+  position: absolute;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 80vw;
+  top: 10vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 1rem;
+  background-color: rgba(83, 144, 15, 0.8);
+  padding: 5px;
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .FAQ {
+    width: 60vw;
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+}
+@media only screen and (max-height: 400px) {
+  .FAQ {
+    font-size: 0.75rem;
+    padding: 5px;
+  }
+}
+.FAQ > div:nth-child(1) {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.FAQQuestion {
+  background-color: #1f6521;
+  color: white;
+  padding: 15px;
+  margin: 15px 0px;
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-height: 400px) {
+  .FAQQuestion {
+    padding: 5px 15px;
+  }
+}
+.FAQAnswer {
+  width: calc(100% - 33.2px);
+  padding: 15px;
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+}
+
+@media only screen and (max-height: 400px) {
+  .FAQAnswer {
+    padding: 5px 15px;
+  }
+}/*# sourceMappingURL=FAQ.css.map */

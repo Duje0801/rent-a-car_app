@@ -1,0 +1,319 @@
+$green1: #1f2605;
+$green2: #1f6521;
+$green3: #53900f;
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 4rem;
+$gapXS: 5px;
+$gapS: 15px;
+$gap: 30px;
+$border: 2px solid $green1;
+
+.reservationR {
+  height: fit-content;
+}
+
+.titleR {
+  position: relative;
+  height: fit-content;
+  font-size: $fontL;
+  font-weight: bold;
+  background-color: $green1;
+  color: white;
+  padding: $gap;
+}
+
+@media only screen and (max-width: 992px) {
+  .titleR {
+    font-size: $fontM;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .titleR {
+    padding: $gapS;
+  }
+}
+
+.titleLogoTextR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@media only screen and (max-width: 992px) {
+  .titleLogoTextR {
+    display: none;
+  }
+}
+
+.backTitleR {
+  font-size: $fontM;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: $gap;
+  left: $gap;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .backTitleR {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0px;
+    font-size: $fontS;
+  }
+}
+
+.logoR {
+  width: 100px;
+}
+
+@media only screen and (max-width: 992px) {
+  .logoR {
+    width: 80px;
+  }
+}
+
+.gridR {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (min-width: 992px) {
+  .gridR {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.categoryShowR {
+  padding: $gapXS;
+  margin: $gapXS;
+  text-align: center;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  .categoryShowR {
+    font-size: $fontS;
+  }
+}
+
+.categoryShowR > div:first-child {
+  font-weight: bold;
+}
+
+.categoryShowBorderR {
+  border: $border;
+  border-radius: $gapXS;
+}
+
+.categoryShowBoxImg {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 450px) {
+  .categoryShowBoxImg {
+    height: 175px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .categoryShowBoxImg {
+    height: 250px;
+  }
+}
+
+.categoryShowImg {
+  width: 40vw;
+}
+
+@media only screen and (min-width: 992px) {
+  .categoryShowImg {
+    width: 20vw;
+  }
+}
+
+.packageBoxR {
+  margin: $gapS;
+}
+
+@media only screen and (min-width: 600px) {
+  .packageBoxR {
+    font-size: $fontS;
+  }
+}
+
+.packageBoxR > button {
+  background-color: #1f6521;
+  color: white;
+  border: 0px;
+  padding: $gapXS;
+  width: 100%;
+  border-radius: $gapXS;
+  cursor: pointer;
+}
+
+.packageBoxR > button:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .packageBoxR > button {
+    font-size: $fontS;
+    max-width: 300px;
+  }
+
+  .packageBoxR > button:hover {
+    color: $green1;
+  }
+}
+
+.packageTitleR {
+  font-weight: bold;
+}
+
+.priceConfirmR {
+  margin: $gapS;
+}
+
+.fullPriceTextR {
+  font-size: $fontS;
+  margin-bottom: $gap;
+}
+
+@media only screen and (min-width: 600px) {
+  .fullPriceTextR {
+    font-size: $fontM;
+  }
+}
+
+.fullPriceNumR {
+  background-color: $green2;
+  color: white;
+  padding: $gapXS;
+}
+
+.confirmR {
+  background-color: #1f6521;
+  color: white;
+  border: 0px;
+  padding: $gapS;
+  width: 100%;
+  font-size: $fontM;
+  border-radius: $gapXS;
+  cursor: pointer;
+}
+
+.confirmR:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .confirmR {
+    font-size: $fontL;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .confirmR:hover {
+    color: $green1;
+  }
+}
+
+.diffLocationR {
+  font-size: $fontXXS;
+}
+
+.modalBackgroundR {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(black, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalR {
+  width: fit-content;
+  padding: $gap;
+  height: fit-content;
+  background-color: white;
+  text-align: center;
+  border: $border;
+  user-select: none;
+  border-radius: $gapXS;
+}
+
+.modalR > img {
+  width: 200px;
+}
+
+.modalR > div:first-child {
+  font-size: $fontS;
+  font-weight: bold;
+  margin-bottom: $gap;
+}
+
+.modalR > div:last-child {
+  margin-top: $gap;
+  display: flex;
+  justify-content: center;
+  gap: $gap;
+}
+
+.descriptionR {
+  font-weight: bold;
+}
+
+.fullPriceR {
+  background-color: #1f6521;
+  color: white;
+  padding: 0px $gapS;
+}
+
+.modalButtonYesR {
+  background-color: white;
+  border: 2px solid $green3;
+  padding: $gapS;
+  font-size: $fontXS;
+  border-radius: $gapXS;
+  cursor: pointer;
+}
+
+.modalButtonNoR {
+  background-color: white;
+  border: 2px solid red;
+  padding: $gapS;
+  font-size: $fontXS;
+  border-radius: $gapXS;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+  .modalButtonYesR:hover {
+    background-color: $green2;
+    color: white;
+  }
+
+  .modalButtonNoR:hover {
+    background-color: red;
+    color: white;
+  }
+}
+
+.finalModalTitleR {
+  font-size: $fontM;
+  margin-top: $gap;
+}

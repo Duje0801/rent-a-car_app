@@ -1,0 +1,126 @@
+.tmT {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+@media only screen and (max-width: 1300px) {
+  .tmT {
+    gap: 15px;
+    margin: auto;
+  }
+}
+.titleT {
+  font-size: 3rem;
+  color: #1f6521;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .titleT {
+    font-size: 2rem;
+  }
+}
+.allBoxesT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centralBoxAndArrowsT {
+  display: flex;
+}
+
+.boxCentralT {
+  width: 450px;
+  height: 225px;
+  margin: 15px;
+  background-color: #1f6521;
+  padding: 15px;
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  position: relative;
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .boxCentralT {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .boxCentralT {
+    min-width: 200px;
+    width: 70vw;
+    height: 250px;
+    font-size: 0.75rem;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .boxCentralT {
+    font-size: 0.75rem;
+    height: 250px;
+  }
+}
+.arrowBoxT {
+  margin: auto 0px;
+}
+
+.arrowT {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 620px) {
+  .arrowT {
+    font-size: 2rem;
+  }
+}
+.boxSideT {
+  width: 300px;
+  height: 200px;
+  background-color: #1f6521;
+  padding: 5px;
+  font-size: 0.75rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  position: relative;
+  margin: auto 15px;
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+  filter: blur(5px);
+}
+
+@media only screen and (max-width: 1300px) {
+  .boxSideT {
+    display: none;
+  }
+}
+.boxCustomerInfoT {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+@media only screen and (max-width: 620px) {
+  .boxCustomerInfoT {
+    bottom: 5px;
+    right: 5px;
+  }
+}/*# sourceMappingURL=testimonials.css.map */

@@ -1,0 +1,137 @@
+.chatC {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #1f2605;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .chatC {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+.closeC {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.titleC {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.messagesDisplayC {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  padding: 15px;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+@media only screen and (max-height: 500px) {
+  .messagesDisplayC {
+    height: 100px;
+  }
+}
+@media only screen and (max-height: 400px) {
+  .messagesDisplayC {
+    height: 80px;
+  }
+}
+.messageBoxC {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.messageBoxC > img {
+  height: 15px;
+}
+
+.messageC {
+  background-color: #1f6521;
+  margin: 5px;
+  padding: 5px 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.75rem;
+  border-radius: 5px;
+}
+
+.messageUserC {
+  background-color: #53900f;
+  margin: 5px;
+  padding: 5px 15px;
+  max-width: 200px;
+  margin-left: auto;
+  word-wrap: break-word;
+  font-size: 0.75rem;
+  border-radius: 5px;
+}
+
+.chatInputC {
+  width: 200px;
+  border: 0px;
+  padding: 5px 15px;
+  font-size: 1rem;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.chatInputC:focus {
+  outline: none;
+}
+
+.chatClosedC {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #1f2605;
+  color: white;
+  padding: 15px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .chatClosedC {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+@media only screen and (max-width: 992px) and (max-height: 550px) {
+  .chatClosedC {
+    bottom: 5px;
+    right: 5px;
+  }
+}
+.chatBtnC {
+  display: none;
+}/*# sourceMappingURL=chat.css.map */

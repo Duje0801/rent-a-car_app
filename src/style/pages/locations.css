@@ -1,0 +1,82 @@
+.frontL {
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.frontImageL {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+}
+
+@media only screen and (min-width: 1180px) {
+  .frontImageL {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+.locationsL {
+  position: absolute;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgba(83, 144, 15, 0.8);
+  padding: 5px;
+  top: 15vh;
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media only screen and (min-width: 450px) {
+  .locationsL {
+    width: 80vw;
+    top: 20vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1180px) {
+  .locationsL {
+    width: 80vw;
+    max-width: 1100px;
+    top: 10vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 15px;
+  }
+}
+.locationsListL {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  background-color: #1f6521;
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+}
+
+.locationsTitleL {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.locationsAdressL {
+  text-align: center;
+  font-size: 0.75rem;
+  color: white;
+}/*# sourceMappingURL=locations.css.map */

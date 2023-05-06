@@ -1,0 +1,178 @@
+$green1: #1f2605;
+$green2: #1f6521;
+$green3: #53900f;
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 4rem;
+$gapXS: 5px;
+$gapS: 15px;
+$gap: 30px;
+$border: 2px solid $green1;
+
+.fleetFC {
+  display: flex;
+  width: fit-content;
+  gap: $gap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: $gap auto;
+}
+
+@media only screen and (max-width: 1280px) {
+  .fleetFC {
+    gap: $gapS;
+  }
+}
+
+.titleFC {
+  font-size: $fontL;
+  color: $green2;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .titleFC {
+    font-size: $fontM;
+  }
+}
+
+.carSelectionFC {
+  display: flex;
+  gap: $gapS;
+}
+
+.carDisplayFC {
+  color: $green2;
+  font-size: $fontM;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1280px) {
+  .carDisplayFC {
+    font-size: $fontS;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .carDisplayFC {
+    display: none;
+  }
+}
+
+.carImgBoxFC {
+  display: flex;
+  align-items: center;
+  height: 250px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .carImgBoxFC {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .carImgBoxFC {
+    height: 100px;
+  }
+}
+
+.carImgFC {
+  width: 325px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .carImgFC {
+    width: 20vw;
+    margin: auto;
+  }
+}
+
+.respCarSelectionFC {
+  display: none;
+}
+
+@media only screen and (max-width: 620px) {
+  .respCarSelectionFC {
+    display: flex;
+    justify-content: center;
+    margin: $gapXS;
+  }
+  .respCarDisplayFC {
+    display: flex;
+    flex-direction: column;
+    gap: $gapS;
+  }
+  .respCarDisplayFC > div:first-child {
+    color: $green2;
+    font-size: $fontM;
+    text-align: center;
+    font-weight: bold;
+  }
+  .respCarImgBoxFC {
+    display: flex;
+    align-items: center;
+    height: 205px;
+    margin: auto;
+  }
+  .respCarImgFC {
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .respCarDisplayFC > div:first-child {
+    font-size: $fontS;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .respCarImgBoxFC {
+    height: 170px;
+  }
+}
+
+.arrowBoxFC {
+  display: none;
+}
+
+.arrowFC {
+  font-size: $fontL;
+}
+
+.arrowFC {
+  font-size: $fontM;
+}
+
+.seeMoreFC {
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.seeMoreFC:hover {
+  color: white;
+  background-color: $green2;
+  cursor: pointer;
+  border: $border;
+  border-radius: $gapXS;
+}
+
+@media only screen and (max-width: 620px) {
+  .seeMoreFC {
+    color: white;
+    font-size: $fontS;
+    background-color: $green2;
+    border: $border;
+    width: 80vw;
+    max-width: 320px;
+    margin: auto;
+    text-align: center;
+    border-radius: $gapXS;
+  }
+}

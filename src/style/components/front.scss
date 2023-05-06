@@ -1,0 +1,182 @@
+$green1: #1f2605;
+$green2: #1f6521;
+$green3: #53900f;
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 4rem;
+$gapXS: 5px;
+$gapS: 15px;
+$gap: 30px;
+$border: 2px solid $green1;
+
+.frontFr {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.frontImageFr {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -2;
+}
+
+.selectionFr {
+  position: absolute;
+  height: fit-content;
+  width: 75vw;
+  top: 10vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgb($green2, 0.9);
+  padding: $gapS;
+  border: $border;
+  border-radius: $gapXS;
+  color: white;
+}
+
+@media only screen and (min-width: 1025px) {
+  .selectionFr {
+    position: absolute;
+    width: 40vw;
+    height: fit-content;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-height:575px) and (max-width: 1024px) {
+  .selectionFr {
+    padding: $gapXS;
+  }
+}
+
+.selectionTitleFr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: $fontM;
+  font-weight: bold;
+  gap: $gapXS;
+}
+
+@media only screen and (min-width: 1025px) {
+  .selectionTitleFr {
+    flex-direction: row;
+    font-size: $fontL;
+    gap: $gapS;
+  }
+}
+
+@media only screen and (max-height:575px) and (max-width: 1024px) {
+  .selectionTitleFr {
+    flex-direction: row;
+    font-size: $fontS;
+  }
+}
+
+.selectionLogoFr {
+  width: 150px;
+}
+
+@media only screen and (max-height:575px) and (max-width: 1024px) {
+  .selectionLogoFr {
+    width: 75px;
+  }
+}
+
+.formWarningFr {
+  background-color: red;
+  color: white;
+  text-align: center;
+  width: calc(100% - ($gapXS * 2));
+  border-radius: $gapXS;
+  margin: $gapXS auto auto auto;
+}
+
+.formRowFr {
+  font-weight: bold;
+  margin: $gapXS;
+}
+
+@media only screen and (min-width: 1025px) {
+  .formRowFr {
+    font-size: $fontS;
+  }
+}
+
+.pickUpDropOffLocationFr {
+  width: 100%;
+  border-radius: $gapXS;
+
+}
+
+@media only screen and (min-width: 1025px) {
+  .pickUpDropOffLocationFr {
+    font-size: $fontS;
+    cursor: pointer;
+  }
+}
+
+.datePickerFr {
+  width: calc(100% - 6.2px);
+  border-radius: $gapXS;
+  border: 0px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .datePickerFr {
+    font-size: $fontS;
+    cursor: pointer;
+  }
+}
+
+.selectionBtnBoxFr {
+  display: flex;
+  justify-content: center;
+}
+
+.selectionBtnFr {
+  background-color: $green1;
+  color: white;
+  font-size: $fontS;
+  padding: $gapXS;
+  width: calc(100% - ($gapXS * 2));
+  margin-top: $gapXS;
+  border: 0px;
+  border-radius: $gapXS;
+}
+
+@media only screen and (min-width: 1025px) {
+  .selectionBtnFr {
+    font-size: $fontM;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-height:575px) and (max-width: 1024px) {
+  .selectionBtnFr {
+    font-size: $fontS;
+  }
+}
+
+//Resizing date-picker numbers (classes are from Date Picker library) if screen is narrow
+@media only screen and (max-width: 400px) {
+  .react-datepicker__month {
+    margin: 0px;
+  }
+  .react-datepicker__day-name {
+    margin: 0px;
+  }
+  .react-datepicker__day {
+    margin: 0px;
+  }
+}

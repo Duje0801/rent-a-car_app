@@ -1,0 +1,72 @@
+.frontA {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.frontImageA {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -2;
+}
+
+.aboutUsA {
+  position: absolute;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 10vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(83, 144, 15, 0.8);
+  padding: 5px;
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+  width: 80vw;
+  font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 1025px) {
+  .aboutUsA {
+    width: 60vw;
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+}
+@media only screen and (max-height: 625px) {
+  .aboutUsA {
+    width: 80vw;
+    font-size: 1rem;
+    padding: 5px;
+  }
+}
+@media only screen and (max-height: 625px) and (max-width: 900px) {
+  .aboutUsA {
+    font-size: 0.75rem;
+  }
+}
+.aboutUsA > div:nth-child(1) {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.aboutUsTextA {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #1f6521;
+  color: white;
+  padding: 15px;
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+}
+
+.aboutUsTextA > p {
+  margin: 0px;
+  padding: 0px;
+}/*# sourceMappingURL=aboutUs.css.map */

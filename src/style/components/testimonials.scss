@@ -1,0 +1,147 @@
+$green1: #1f2605;
+$green2: #1f6521;
+$green3: #53900f;
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 4rem;
+$gapXS: 5px;
+$gapS: 15px;
+$gap: 30px;
+$border: 2px solid $green1;
+
+.tmT {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: $gap auto;
+}
+
+@media only screen and (max-width: 1300px) {
+  .tmT {
+    gap: $gapS;
+    margin: auto;
+  }
+}
+
+.titleT {
+  font-size: $fontL;
+  color: $green2;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .titleT {
+    font-size: $fontM;
+  }
+}
+
+.allBoxesT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centralBoxAndArrowsT {
+  display: flex;
+}
+
+.boxCentralT {
+  width: 450px;
+  height: 225px;
+  margin: $gapS;
+  background-color: $green2;
+  padding: $gapS;
+  font-size: $fontXS;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  position: relative;
+  border: $border;
+  border-radius: $gapXS;
+}
+
+@media only screen and (max-width: 1300px) {
+  .boxCentralT {
+    font-size: $fontXS;
+    margin-bottom: $gap;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .boxCentralT {
+    min-width: 200px;
+    width: 70vw;
+    height: 250px;
+    font-size: $fontXXS;
+    margin: $gapXS;
+    padding: $gapXS;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .boxCentralT {
+    font-size: $fontXXS;
+    height: 250px;
+  }
+}
+
+.arrowBoxT {
+  margin: auto 0px;
+}
+
+.arrowT {
+  font-size: $fontL;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 620px) {
+  .arrowT {
+    font-size: $fontM;
+  }
+}
+
+.boxSideT {
+  width: 300px;
+  height: 200px;
+  background-color: $green2;
+  padding: $gapXS;
+  font-size: $fontXXS;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  position: relative;
+  margin: auto $gapS;
+  border: $border;
+  border-radius: $gapXS;
+  filter: blur(5px);
+}
+
+@media only screen and (max-width: 1300px) {
+  .boxSideT {
+    display: none;
+  }
+}
+
+.boxCustomerInfoT {
+  position: absolute;
+  bottom: $gapS;
+  right: $gapS;
+}
+
+@media only screen and (max-width: 620px) {
+  .boxCustomerInfoT {
+    bottom: $gapXS;
+    right: $gapXS;
+  }
+}

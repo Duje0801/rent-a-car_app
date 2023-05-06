@@ -1,0 +1,151 @@
+$green1: #1f2605;
+$green2: #1f6521;
+$green3: #53900f;
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 4rem;
+$gapXS: 5px;
+$gapS: 15px;
+$gap: 30px;
+$border: 2px solid $green1;
+
+.chatC {
+  position: fixed;
+  bottom: $gap;
+  right: $gap;
+  width: fit-content;
+  height: fit-content;
+  background-color: $green1;
+  color: white;
+  padding: $gapS;
+  border-radius: $gapXS;
+}
+
+@media only screen and (max-width: 500px) {
+  .chatC {
+    bottom: $gapS;
+    right: $gapS;
+  }
+}
+
+.closeC {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: $fontS;
+  cursor: pointer;
+}
+
+.titleC {
+  font-weight: bold;
+  font-size: $fontS;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $gapS;
+}
+
+.messagesDisplayC {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  padding: $gapS;
+  overflow: auto;
+  border-radius: $gapXS;
+}
+
+@media only screen and (max-height: 500px) {
+  .messagesDisplayC {
+    height: 100px;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  .messagesDisplayC {
+    height: 80px;
+  }
+}
+
+.messageBoxC {
+  display: flex;
+  align-items: center;
+  border-radius: $gapXS;
+}
+
+.messageBoxC > img {
+  height: $gapS;
+}
+
+.messageC {
+  background-color: $green2;
+  margin: $gapXS;
+  padding: $gapXS $gapS;
+  width: fit-content;
+  font-size: $fontXXS;
+  border-radius: $gapXS;
+}
+
+.messageUserC {
+  background-color: $green3;
+  margin: $gapXS;
+  padding: $gapXS $gapS;
+  max-width: 200px;
+  margin-left: auto;
+  word-wrap: break-word;
+  font-size: $fontXXS;
+  border-radius: $gapXS;
+}
+
+.chatInputC {
+  width: 200px;
+  border: 0px;
+  padding: $gapXS $gapS;
+  font-size: $fontXS;
+  margin-top: $gapS;
+  border-radius: $gapXS;
+}
+
+.chatInputC:focus {
+  outline: none;
+}
+
+.chatClosedC {
+  position: fixed;
+  bottom: $gap;
+  right: $gap;
+  width: fit-content;
+  height: fit-content;
+  background-color: $green1;
+  color: white;
+  padding: $gapS;
+  font-size: $fontXS;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $gapXS;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .chatClosedC {
+    bottom: $gapS;
+    right: $gapS;
+  }
+}
+
+@media only screen and (max-width: 992px) and (max-height: 550px) {
+  .chatClosedC {
+    bottom: $gapXS;
+    right: $gapXS;
+  }
+}
+
+.chatBtnC {
+  display: none;
+}

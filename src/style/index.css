@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito", sans-serif;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}/*# sourceMappingURL=index.css.map */

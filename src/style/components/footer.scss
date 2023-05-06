@@ -1,0 +1,82 @@
+$green1: #1f2605;
+$green2: #1f6521;
+$green3: #53900f;
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 4rem;
+$gapXS: 5px;
+$gapS: 15px;
+$gap: 30px;
+$border: 2px solid $green1;
+
+.footerFo {
+  height: fit-content;
+  background-color: $green2;
+  padding: $gap;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footerFo {
+    flex-direction: column;
+    gap: $gap;
+    margin-top: $gap;
+  }
+
+  .footerFo > div:first-child {
+    margin: 0px auto;
+  }
+}
+
+.columnOneFo {
+  text-align: center;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.columnOneInsideFo {
+  width: fit-content;
+  display: flex;
+  gap: $gap;
+}
+
+.columnOneInsideFo > div {
+  height: fit-content;
+  margin: auto 0px;
+  font-size: $fontS;
+}
+
+.logoFo {
+  height: 100px;
+}
+
+.columnTwoFo {
+  font-size: $fontXS;
+}
+
+.mailFo {
+  color: white;
+  text-decoration: none;
+}
+
+.mailFo:hover {
+  text-decoration: underline;
+}
+
+.linkFo {
+  text-decoration: none;
+  color: white;
+}
+
+.linkFo:hover {
+  text-decoration: underline;
+}
+
+.columnThreeFo {
+  font-size: $fontXS;
+}

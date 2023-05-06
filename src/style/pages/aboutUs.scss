@@ -1,0 +1,88 @@
+$green1: #1f2605;
+$green2: #1f6521;
+$green3: #53900f;
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 4rem;
+$gapXS: 5px;
+$gapS: 15px;
+$gap: 30px;
+$border: 2px solid $green1;
+
+.frontA {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.frontImageA {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -2;
+}
+
+.aboutUsA {
+  position: absolute;
+  height: fit-content;
+  top: 10vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba($green3, 0.8);
+  padding: $gapXS;
+  border: $border;
+  border-radius: $gapXS;
+  width: 80vw;
+  font-size: $fontXXS;
+}
+
+@media only screen and (min-width: 1025px) {
+  .aboutUsA {
+    width: 60vw;
+    font-size: $fontS;
+    padding: $gapS;
+  }
+}
+
+@media only screen and (max-height: 625px) {
+  .aboutUsA {
+    width: 80vw;
+    font-size: $fontXS;
+    padding: $gapXS;
+  }
+}
+
+@media only screen and (max-height: 625px) and (max-width: 900px) {
+  .aboutUsA {
+    font-size: $fontXXS;
+  }
+}
+
+.aboutUsA > div:nth-child(1) {
+  font-size: $fontM;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.aboutUsTextA {
+  display: flex;
+  flex-direction: column;
+  gap: $gapS;
+  background-color: $green2;
+  color: white;
+  padding: $gapS;
+  border: $border;
+  border-radius: $gapXS;
+}
+
+.aboutUsTextA > p {
+  margin: 0px;
+  padding: 0px;
+}
