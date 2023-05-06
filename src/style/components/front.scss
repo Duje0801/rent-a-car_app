@@ -26,6 +26,15 @@ $border: 2px solid $green1;
   z-index: -2;
 }
 
+@media only screen and (max-width: 1024px) {
+  .frontImageFr {
+    width: auto;
+    min-width: calc(100vw + 250px);
+    object-fit: cover;
+    transform: translate(-250px);
+  }
+}
+
 .selectionFr {
   position: absolute;
   height: fit-content;
@@ -51,7 +60,7 @@ $border: 2px solid $green1;
   }
 }
 
-@media only screen and (max-height:575px) and (max-width: 1024px) {
+@media only screen and (max-height: 575px) and (max-width: 1024px) {
   .selectionFr {
     padding: $gapXS;
   }
@@ -76,7 +85,7 @@ $border: 2px solid $green1;
   }
 }
 
-@media only screen and (max-height:575px) and (max-width: 1024px) {
+@media only screen and (max-height: 575px) and (max-width: 1024px) {
   .selectionTitleFr {
     flex-direction: row;
     font-size: $fontS;
@@ -87,7 +96,7 @@ $border: 2px solid $green1;
   width: 150px;
 }
 
-@media only screen and (max-height:575px) and (max-width: 1024px) {
+@media only screen and (max-height: 575px) and (max-width: 1024px) {
   .selectionLogoFr {
     width: 75px;
   }
@@ -116,7 +125,6 @@ $border: 2px solid $green1;
 .pickUpDropOffLocationFr {
   width: 100%;
   border-radius: $gapXS;
-
 }
 
 @media only screen and (min-width: 1025px) {
@@ -162,7 +170,7 @@ $border: 2px solid $green1;
   }
 }
 
-@media only screen and (max-height:575px) and (max-width: 1024px) {
+@media only screen and (max-height: 575px) and (max-width: 1024px) {
   .selectionBtnFr {
     font-size: $fontS;
   }
