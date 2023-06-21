@@ -47,7 +47,9 @@ function Packages(reservation, setReservation, category, translations) {
         </div>
         <button onClick={handleClickPackage}>
           {translations.include}{" "}
-          <span className="additionalPricesR">{(category + 1) * 25}€/day</span>
+          <span className="additionalPricesR">
+            {(category + 1) * 25}€/ {translations.day}
+          </span>
         </button>
       </div>
       <div>

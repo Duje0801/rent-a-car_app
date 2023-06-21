@@ -59,6 +59,8 @@ function Translations() {
       goBack: `Go back to home page`,
       class: `Class`,
       typeMessage: `Type message...`,
+      confirm: `Confirm`,
+      day: `Day`,
     };
   else
     return {
@@ -114,6 +116,8 @@ function Translations() {
       goBack: `Vrati se na početnu stranicu`,
       class: `Klasa`,
       typeMessage: `Napišite poruku...`,
+      confirm: `Potvrdi`,
+      day: `Dan`,
     };
 }
 

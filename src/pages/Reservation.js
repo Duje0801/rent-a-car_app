@@ -150,7 +150,7 @@ function Reservation() {
             <span className="fullPriceNumR">{fullPrice}€</span>
           </div>
           <button onClick={handleConfirm} className="confirmR">
-            Confirm
+            {translations.confirm}
           </button>
           <div className="diffLocationR">{diffLocation}</div>
         </div>
